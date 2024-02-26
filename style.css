@@ -1,0 +1,63 @@
+body{
+    background-image: url('https://www.aba-work.com/upload/img/c/700x0-shutterstock_1046562019.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.mario{
+    top:320px;
+    position: relative;
+    animation: example 3s;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.blocco{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100px;
+    height: 100px;
+    top:0px;
+    background-color: yellow;
+    color: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 2px 2px darkgoldenrod;
+    animation: example1 1.2s;
+    animation-delay: 2.2s;
+}
+.bi-question-lg{
+    font-size: 70px;
+}
+.bi-coin{
+    color: black;
+    position: relative;
+    font-size: 50px;
+    animation: example2 1.2s;
+    animation-delay: 2.3s;
+}
+@keyframes example {
+    0%   {left:150px; top:320px}
+    25%  {left:250px; top:320px;}
+    50%  {left:350px; top:320px;}
+    75%  {left:450px; top:320px;}
+    100% {left:600px; top:250px;}
+  }
+@keyframes example1 {
+    0%   {top:0px;}
+    25%  {top:0px;}
+    50%  {top:0px;}
+    75%  {top:-50px;}
+    100% {top:0px;}
+  }
+@keyframes example2 {
+    0%   {top:0px; display:none;}
+    25%  {top:0px;display:none;}
+    50%  {top:-50px;display:none;}
+    75%  {top:-100px;display:block; transform: rotateX(360deg); transform: rotateY(180deg);}
+    100% {top:0px;display:none;}
+  }
